@@ -25,12 +25,12 @@ a {
   background-color: transparent;
 }
 
-.category-btn::hover {
+.category-btn:hover {
   background-color: #fc1503 !important;
   color: white !important;
 }
 
-.category-btn::hover span {
+.category-btn:hover span {
   color: white !important;
 }
 
@@ -55,6 +55,7 @@ a {
   background: transparent;
   outline: none;
   border: none;
+
   padding: 7px 15px;
   margin: 10px 0;
   border-radius: 20px;
@@ -81,7 +82,6 @@ a {
   .react-player {
     height: 45vh !important;
   }
-
   .search-bar {
     width: 200px;
   }
