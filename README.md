@@ -10,11 +10,10 @@ A demo project to clone Youtube using RapidAPI.
 4.  [React File and Folder Structure](#react-file-and-folder-structure)
 5.  [Material UI v5](#material-ui-v5)
 6.  [Responsive design](#responsive-design)
-7.  [Test5](#test5)
-8.  [Technology](#technology)
-9.  [References](#references)
-10. [Keywords](#keywords)
-11. [Getting Started with Create React App](#getting-started-with-create-react-app)
+7.  [Technologies](#technologies)
+8.  [References](#references)
+9.  [Keywords](#keywords)
+10. [Getting Started with Create React App](#getting-started-with-create-react-app)
 
 ## Rapid API
 
@@ -152,23 +151,34 @@ Navigation should be easy to use on all devices. This oftne involves a menu that
 
 **Significance of Responsive Design in Web Development**
 
-## Technology
+## Technologies
 
-This is technology
+The list of technologies used in this projects are:
+
+```
+Javascript, React, Rapid API, Material UI v5, Axios, HTML, CSS, AWS, EC2, S3, Git, GitHub, VS Code,
+```
 
 ## References
 
 This is project is possible based on following open source projects:
 
+- React: https://react.dev/
+- React Visualized: https://react.gg/visualized
+- React Testing Library: https://testing-library.com/docs/react-testing-library/intro/
+- Jest: https://jestjs.io/
 - Rapid API: https://rapidapi.com/ytdlfree/api/youtube-v31/
+- Free Code Camp: https://www.freecodecamp.org/
 - GitHub: https://github.com/adrianhajdin/project_youtube_clone
+- CSS Flex Box: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+- CSS Grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
 - Material UI: https://mui.com/material-ui/getting-started/overview/
 - Material Tutorial: https://www.youtube.com/watch?v=Xoz31I1FuiY
 - CSS Gradient: https://cssgradient.io/
 
 ## Keywords
 
-Youtube Clone, React, JavaScript, ES6, JavaScript Interview, Algorithms, Datastructures, Interview Preparation, Technical Interview, Coding Challenges, Programming Challenges.
+Youtube Clone, Portfolio Showcase, React, JavaScript, ES6, JavaScript Interview, Algorithms, Datastructures, Interview Preparation, Technical Interview, Coding Challenges, Programming Challenges.
 
 ## Getting Started with Create React App
 
