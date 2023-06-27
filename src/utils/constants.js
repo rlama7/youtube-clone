@@ -12,7 +12,8 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const logo =
+  'https://assets-s3-ratnalamacom.s3.us-west-1.amazonaws.com/logo.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon /> },
@@ -34,11 +35,11 @@ export const categories = [
   { name: 'Crypto', icon: <DeveloperModeIcon /> },
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
-export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
-export const demoVideoUrl = '/video/GDa8kZLNhJ4';
-export const demoChannelTitle = 'JavaScript Mastery';
-export const demoVideoTitle =
-  'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
+export const demoThumbnailUrl =
+  'https://assets-s3-ratnalamacom.s3.us-west-1.amazonaws.com/thumbnail.jpeg';
+export const demoChannelUrl = '/channel/UC8butISFwT-Wl7EV0hUK0BQ';
+export const demoVideoUrl = '/video/PkZNo7MFNFg';
+export const demoChannelTitle = 'freeCodeCamp.org';
+export const demoVideoTitle = 'Learn to code for free.';
 export const demoProfilePicture =
-  'http://dergipark.org.tr/assets/app/images/buddy_sample.png';
+  'https://assets-s3-ratnalamacom.s3.us-west-1.amazonaws.com/profile.pngs';
