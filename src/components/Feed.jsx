@@ -35,7 +35,7 @@ const Feed = () => {
           variant="body2"
           sx={{ mt: 1.5, color: '#fff' }}
         >
-          Copyright © 2022 Youtube.com
+          Copyright &copy; 2023 ratnalama.com.
         </Typography>
       </Box>
 

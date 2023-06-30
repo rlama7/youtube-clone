@@ -2,6 +2,8 @@
 
 A demo project to clone Youtube using RapidAPI.
 
+:movie_camera: [Live Demo](https://youtube-clone.ratnalama.com/)
+
 ## Table fo Contents
 
 1.  [Rapid API](#rapid-api)
@@ -11,9 +13,10 @@ A demo project to clone Youtube using RapidAPI.
 5.  [Material UI v5](#material-ui-v5)
 6.  [Responsive design](#responsive-design)
 7.  [Technologies](#technologies)
-8.  [References](#references)
-9.  [Keywords](#keywords)
-10. [Getting Started with Create React App](#getting-started-with-create-react-app)
+8.  [Deployment](#deployment)
+9.  [References](#references)
+10. [Keywords](#keywords)
+11. [Getting Started with Create React App](#getting-started-with-create-react-app)
 
 ## Rapid API
 
@@ -29,9 +32,9 @@ Rapid API is an online API marketplace that connects developers with thousands o
 
 In this project, I implemented react functional components primarily for:
 
-- Simplicity: Functional components are more straightforward and concise than class components.
-- Performance: They tend to have a slight performance boost over class components due to their simplicity.
-- Reusability: By creating reusable commponents, we can avoid redundancy and ensure consistency across the application.
+- **Simplicity**: Functional components are more straightforward and concise than class components.
+- **Performance**: They tend to have a slight performance boost over class components due to their simplicity.
+- **Reusability**: By creating reusable commponents, we can avoid redundancy and ensure consistency across the application.
 
 ## React Hooks
 
@@ -39,7 +42,7 @@ React Hooks were introduced in React 16.8 and allow you to use state and other R
 
 - `useState` is used when the component has some data that changes over time, and we want it to re-render whenever data changes.
 
-- `useEffect` lets us perform side effects in functiion componetns. It's like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined in class components.
+- `useEffect` lets us perform side effects in function componetns. It's like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined in class components.
 
 **Best Practices for Using Hooks**
 
@@ -50,7 +53,7 @@ React Hooks were introduced in React 16.8 and allow you to use state and other R
 
 ## React File and Folder Structure
 
-This project utilizes a well-structured React project to significantly improve the development experience by making the codebase more maintainable and scalable.
+This project utilizes a well-structured React file and folder structure to significantly improve the development experience by making the codebase more maintainable and scalable.
 
 <pre>
 youtube-clone/
@@ -66,17 +69,14 @@ youtube-clone/
 │   │   ├── 
 │   │   │   ├── Video.jsx
 │   │   │   └── VideoDetail.jsx
-│   │   │   ├── SideBar.jsx
-│   │   │   └── SearchFeed.jzd
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── SearchFeed.jsx
 │   │   └── ...
 │   │
 │   ├── utils/
 │   │   ├──── 
 │   │       ├── constants.js
 │   │       └── fetchFromAPI.js
-│   │
-│   ├── utils/
-│   │   └── api.js
 │   │
 │   ├── App.js
 │   ├── index.css
@@ -85,13 +85,14 @@ youtube-clone/
 │
 ├── .gitignore
 ├── package.json
+├── README.md
 └── ...
 
 </pre>
 
 ## Material UI v5
 
-This project leverages `Material-UI v5`, which is a populare React UI framework that follows Google's Material Design guidelines. Material-Ui version 5, which was released in September 2021, brought significant changes and improvements to the library. I picked material UI for following reasons:
+This project leverages `Material-UI v5 (MUI v5)`, which is a popular React UI framework that follows Google's Material Design guidelines. Material-UI version 5, which was released in September 2021, brought significant changes and improvements to the library. I picked material UI for following reasons:
 
 - New Branding and Package Naming
 - Enhanced Customization
@@ -99,7 +100,7 @@ This project leverages `Material-UI v5`, which is a populare React UI framework 
 - New Components and Features
 - Better Theming
 - Enhanced Documentation
-- Adoption of Emotion and styled-components
+- Adoption of Emotion and Styled-Components
 - Dark Mode Support
 
 In summary, MUI v5 significantly benefits frontend development by providing a rich set of components and utilities, excellent customization capabilites, and performance boost. These features allowed me to create powerful, efficient, and fully responsive youtube clone applications faster and with less effort.
@@ -110,7 +111,7 @@ I've utilized fully responsive design principle in this Youtube Clone project wi
 
 **Fluid Grids**
 
-Fluid grids are essenatial because they let the layout adjust dynamically. In responsive desing, all layout elements are sized in relative unites, such as percentages, rather than absoluite units like pixels. This ensures that the layout adapts to the screen's size.
+Fluid grids are essenatial because they let the layout adjust dynamically. In responsive desing, all layout elements are sized in relative units, such as percentages, rather than absoluite units like pixels. This ensures that the layout adapts to the screen's size.
 
 ```
 .container {
@@ -147,21 +148,25 @@ Media queries allow the applications of different styles for different media typ
 
 **Usable Navigation**
 
-Navigation should be easy to use on all devices. This oftne involves a menu that is horizontal on desktop screens but collapses into a "humburger" menu on mobile devices. However, for this project I've implemented horizontal scrollable menu options.
+Navigation should be easy to use on all devices. This often involves a menu that is horizontal on desktop screens but collapses into a "humburger" menu on mobile devices. However, for this project I've implemented horizontal scrollable menu options on mobile devices since the menu options comprised of a long list.
 
 **Significance of Responsive Design in Web Development**
 
 ## Technologies
 
-The list of technologies used in this projects are:
+:gear: The list of technologies used in this projects are:
 
 ```
-Javascript, React, Rapid API, Material UI v5, Axios, HTML, CSS, AWS, EC2, S3, Git, GitHub, VS Code,
+Javascript, React, Rapid API, Material UI v5, Axios, HTML, CSS, AWS, AWS EC2, AWS S3, AWS Route 53, Git, GitHub, VS Code, CertBot, Virtual Hosting.
 ```
+
+## Deployment
+
+This app is available for test at [Live Demo](https://youtube-clone.ratnalama.com/).
 
 ## References
 
-This is project is possible based on following open source projects:
+:star2: This project is possible based on following open source projects:
 
 - React: https://react.dev/
 - React Visualized: https://react.gg/visualized
