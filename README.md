@@ -21,7 +21,7 @@ A demo project to clone Youtube using RapidAPI.
 
 ## System Design
 
-![Youtube Clone System Design](https://assets-s3-ratnalamacom.s3.us-west-1.amazonaws.com/youtube-clone-system-design.svg 'System Design')
+![Youtube Clone System Design](./src/assets/images/youtube-clone-system-design.svg 'Youtube Clone System Design')
 
 - Client (mobile/desktop) makes a GET request to the server (AWS EC2 Ubuntu instance).
 - Each request is intercepted by NginX which acts as a reverse proxy/load balancer.
