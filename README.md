@@ -2,7 +2,7 @@
 
 A demo project to clone Youtube using RapidAPI.
 
-:movie_camera: [Live Demo](https://youtube-clone.ratnalama.com/)
+:movie_camera: | [![](./src/assets/images/live-demo.svg)](https://youtube-clone.ratnalama.com/)
 
 ## Table fo Contents
 
@@ -81,6 +81,11 @@ youtube-clone/
 │
 ├── src/
 │   │
+|   |
+|   ├── assets/
+│   │   ├── images/
+|   |       ├── youtube-clone-system-design.svg
+|   |
 │   ├── components/
 │   │   ├── 
 │   │   │   ├── Video.jsx
@@ -178,7 +183,20 @@ Javascript, React, Rapid API, Material UI v5, Axios, HTML, CSS, AWS, AWS EC2, AW
 
 ## Deployment
 
-This app is available for test at [Live Demo](https://youtube-clone.ratnalama.com/).
+This app is deployed to AWS Cloud utilizing following technologies but not limited to:
+[![](./src/assets/images/live-demo.svg)](https://youtube-clone.ratnalama.com/)
+
+- AWS EC2
+- AWS S3
+- AWS Route 53
+- AWS CloudFront Distribution
+- AWS Certificate Manager
+- Nginx
+- Rapid API
+- Local Storage
+- Git
+- GitHub
+- GitHub Actions Runner
 
 ## References
 
