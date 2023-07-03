@@ -2,7 +2,9 @@
 
 A demo project to clone Youtube using RapidAPI.
 
-:movie_camera: [Live Demo](https://youtube-clone.ratnalama.com/)
+:movie_camera: [![](./src/assets/images/live-demo.svg)](https://youtube-clone.ratnalama.com/)
+
+[Live Demo](https://youtube-clone.ratnalama.com/)
 
 ## Table fo Contents
 
@@ -81,6 +83,11 @@ youtube-clone/
 │
 ├── src/
 │   │
+|   |
+|   ├── assets/
+│   │   ├── images/
+|   |       ├── youtube-clone-system-design.svg
+|   |
 │   ├── components/
 │   │   ├── 
 │   │   │   ├── Video.jsx

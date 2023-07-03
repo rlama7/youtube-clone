@@ -1,0 +1,12 @@
+<svg width="100" height="40" xmlns="http://www.w3.org/2000/svg">
+    <!-- This rectangle is the background of the button -->
+    <rect x="0" y="0" width="100" height="40" rx="5" ry="5" fill="#e63946"/>
+
+    <!-- This text is the label of the button -->
+    <text x="15" y="25" font-family="Arial" font-size="16px" fill="white">Live Demo</text>
+
+    <!-- Add interactivity -->
+    <a href="https://example.com" target="_blank">
+        <rect x="0" y="0" width="100" height="40" rx="5" ry="5" fill-opacity="0" cursor="pointer" />
+    </a>
+</svg>
