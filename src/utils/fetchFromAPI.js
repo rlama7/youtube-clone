@@ -13,7 +13,19 @@ const options = {
 };
 
 export const fetchFromAPI = async (url) => {
-  const { data } = await axios.get(`${BASE_URL}/${url}`, options);
-  console.log(data);
-  return data;
+  const cachedData = localStorage.getItem(url);
+
+  if (cachedData) {
+    return JSON.parse(cachedData);
+  } else {
+    try {
+      const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+
+      localStorage.setItem(url, JSON.stringify(data));
+      return data;
+    } catch (error) {
+      console.error('Error fetching data from API', error);
+      throw error;
+    }
+  }
 };
