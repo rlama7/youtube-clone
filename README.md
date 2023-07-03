@@ -23,6 +23,17 @@ A demo project to clone Youtube using RapidAPI.
 
 ![Youtube Clone System Design](https://assets-s3-ratnalamacom.s3.us-west-1.amazonaws.com/youtube-clone-system-design.svg 'System Design')
 
+- Client (mobile/desktop) makes a GET request to the server (AWS EC2 Ubuntu instance).
+- Each request is intercepted by NginX which acts as a reverse proxy/load balancer.
+- First checks if the reponse is stored locally in localStorage if not makes the API call to RapidAPI and stores in localStorage for future retrieval
+- AWS S3 bucket acts as a object store for images
+- AWS Route 53 acts as a DNS provider/resolver
+- AWS Cloudfront Distribution CDN caches results
+- AWS Certificate Manager is used by AWS Cloudfront Distribution to securely respond to any cached contents
+- Git/GitHub/GitHub Actions work as the CICD backbone.
+- When a pull request PR is made to the `main` branch, GitHub Actions Runner trigger the CICD workflow updating the latest changes.
+- In the frontend React is used to display content in a user firendly format.
+
 ## Rapid API
 
 Rapid API is an online API marketplace that connects developers with thousands of APIs. By using Rapid API to clone Youtube I implemented following features from the Youtube namely:
