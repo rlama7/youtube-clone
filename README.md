@@ -94,6 +94,10 @@ youtube-clone/
 │   │   │   └── SearchFeed.jsx
 │   │   └── ...
 │   │
+|   ├── hooks/
+│   │   ├────
+│   │       └── useDebounce.js
+|   |
 │   ├── utils/
 │   │   ├──── 
 │   │       ├── constants.js
@@ -107,8 +111,8 @@ youtube-clone/
 ├── .gitignore
 ├── package.json
 ├── README.md
+├── .env (!Neved Add it to the repo! Check .gitignore rule)
 └── ...
-
 </pre>
 
 ## Material UI v5
