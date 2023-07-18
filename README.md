@@ -8,16 +8,17 @@ A demo project to clone Youtube using RapidAPI.
 
 1.  [System Design](#system-design)
 2.  [Rapid API](#rapid-api)
-3.  [Functional Components](#functional-components)
-4.  [React Hooks](#react-hooks)
-5.  [React File and Folder Structure](#react-file-and-folder-structure)
-6.  [Material UI v5](#material-ui-v5)
-7.  [Responsive design](#responsive-design)
-8.  [Technologies](#technologies)
-9.  [Deployment](#deployment)
-10. [References](#references)
-11. [Keywords](#keywords)
-12. [Getting Started with Create React App](#getting-started-with-create-react-app)
+3.  [Debounce](#debounce)
+4.  [Functional Components](#functional-components)
+5.  [React Hooks](#react-hooks)
+6.  [React File and Folder Structure](#react-file-and-folder-structure)
+7.  [Material UI v5](#material-ui-v5)
+8.  [Responsive design](#responsive-design)
+9.  [Technologies](#technologies)
+10. [Deployment](#deployment)
+11. [References](#references)
+12. [Keywords](#keywords)
+13. [Getting Started with Create React App](#getting-started-with-create-react-app)
 
 ## System Design
 
@@ -43,6 +44,32 @@ Rapid API is an online API marketplace that connects developers with thousands o
 - Video Details
 - Channel Details
 - Channel Videos
+
+## Debounce
+
+Events like `onChange` for inputs might be triggered too frequently and cause too many render cycles.
+
+As a user types into a :mag: search bar, we want to wait until they pause or stop typing to perform the search. We don't want to perform the search operation with every single character they type in order to avoid overloading our server with requests. This is particularly applicable in this project since we are using `free-tier` Rapid API with rate limit on API access.
+
+<pre>
+export const debounce = (func, delay) => {
+  let debounceTimer;
+  
+  return (...args) => {
+    const context = this;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  }
+}
+</pre>
+
+`Debounce` is a higher order function that takes function as input.
+
+`debounceTimer` is the timer that keeps track of when we call our function next.
+
+The returned fnction clears any existing timer (using `clearTimeout`) and starts a new timer every time it's called. Only when the timer runs out (after the delay we specified which in this case is 500 milliseconds), original function is called with the correct context and arguments.
+
+If the returned functin is called again before the timer runs out, it will clear the old timer and strat a new one. This means the original function (`fun`) is only called once the returned function stops being called for more than `delay` milliseconds.
 
 ## Functional Components
 
