@@ -67,9 +67,9 @@ export const debounce = (func, delay) => {
 
 `debounceTimer` is the timer that keeps track of when we call our function next.
 
-The returned fnction clears any existing timer (using `clearTimeout`) and starts a new timer every time it's called. Only when the timer runs out (after the delay we specified which in this case is 500 milliseconds), original function is called with the correct context and arguments.
+The returned function clears any existing timer (using `clearTimeout`) and starts a new timer every time it's called. Only when the timer runs out (after the delay we specified which in this case is 500 milliseconds), original function is called with the correct context and arguments.
 
-If the returned functin is called again before the timer runs out, it will clear the old timer and strat a new one. This means the original function (`fun`) is only called once the returned function stops being called for more than `delay` milliseconds.
+If the returned functin is called again before the timer runs out, it will clear the old timer and strat a new one. This means the original function (`func`) is only called once the returned function stops being called for more than `delay` milliseconds.
 
 ## Functional Components
 
