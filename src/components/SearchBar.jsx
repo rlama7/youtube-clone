@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Paper, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
+import { useDebounce } from '../hooks/useDebounce';
+
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (debouncedSearchTerm) {
+      navigate(`/search/${debouncedSearchTerm}`);
+    }
+  }, [debouncedSearchTerm, navigate]);
 
   const onhandleSubmit = (e) => {
     e.preventDefault();
 
     if (searchTerm) {
-      navigate(`/search/${searchTerm}`);
-
       setSearchTerm('');
     }
   };
